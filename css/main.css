@@ -247,7 +247,7 @@ p {
 .card {
   border: 1px solid #ddd;
   padding: 0;
-  margin: 20px 10px;
+  margin: 20px 0;
 }
 
 .image {
@@ -421,8 +421,12 @@ button {
     font-size: 25px;
   }
 
-  .footer {
+  footer {
+    margin-top: 20px;
+  }
+
+  .footer p {
     text-align: center;
-    padding: 25px 0;
+    padding: 15px 0;
   }
 }
