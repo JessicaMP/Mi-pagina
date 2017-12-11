@@ -1,7 +1,7 @@
 /* Reset */
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Monserrat', sans-serif;
   margin: 0;
 }
 /*Grid*/
@@ -192,25 +192,20 @@ ul {
 }
 
 .back {
-  background-color: lightgray;
   width: 100%;
-  height: 350px;
+  background-image: url('../assets/images/background.png');
+  background-size: cover;
+  background-position: center center;
+  display: table;
+  height: 300px;
 }
 
-h2, h1 {
+.back h2 {
+  font-weight: lighter;
   text-align: center;
   font-size: 60px;
-}
-
-h2 {
-  font-weight: lighter;
-  padding-top: 100px;
-}
-
-h1 {
-  font-weight: bold;
-  color: darkgray;
-  transform: translateY(-200%);
+  display: table-cell;
+  vertical-align: middle;
 }
 
 h3 {
@@ -251,21 +246,19 @@ p {
 }
 
 .image {
-  background-color: #ddd;
   padding: 0;
-  height: 200px;
+  height: auto;
+  width: 100%
 }
 
-.image h1 {
-  transform: translateY(150%);
-  font-size: 40px;
+.image img {
+  width: 100%;
 }
 
 .card p {
-  font-size: 14px;
-  line-height: 20px;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 10px 20px 30px;
 }
 
 .btn {
@@ -273,13 +266,13 @@ p {
   padding: 10px 0;
 }
 
-h4, .card p, button {
+h4, button {
   padding: 0 20px;
 }
 
 h4 {
   padding-top: 10px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .footer p {
@@ -311,7 +304,7 @@ button {
   section {
     overflow: auto;
     display: flex;
-}
+  }
 
   .view-mobile {
     display: none;
@@ -322,25 +315,21 @@ button {
   }
 
   .back {
-    background-color: lightgray;
     width: 100%;
-    height: 350px;
+    background-image: url('../assets/images/background.png');
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    display: table;
   }
 
-  h2, h1 {
+  .back h2 {
+    font-weight: lighter;
     text-align: center;
     font-size: 60px;
-  }
-
-  h2 {
-    font-weight: lighter;
-    padding-top: 100px;
-  }
-
-  h1 {
-    font-weight: bold;
-    color: darkgray;
-    transform: translateY(0%);
+    display: table-cell;
+    padding-top: 40px;
+    vertical-align: sub;
   }
 
   h3 {
@@ -385,21 +374,18 @@ button {
   }
 
   .image {
-    background-color: #ddd;
     padding: 0;
-    height: 200px;
+    height: auto;
   }
 
-  .image h1 {
-    transform: translateY(150%);
-    font-size: 40px;
+  .image img {
+    width: 100%;
   }
 
   .card p {
     font-size: 14px;
     line-height: 20px;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding: 10px 20px 30px;
   }
 
   .btn {
@@ -407,7 +393,7 @@ button {
     padding: 10px 0;
   }
 
-  h4, .card p, button {
+  h4, button {
     padding: 0 20px;
   }
 
