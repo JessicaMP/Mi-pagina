@@ -1,0 +1,428 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+/*Grid*/
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] {
+  float: left;
+  padding: 15px;
+}
+
+.col-xs-1 {
+  width: 8.33333333%;
+}
+
+.col-xs-2 {
+  width: 16.66666667%;
+}
+
+.col-xs-3 {
+  width: 25%;
+}
+
+.col-xs-4 {
+  width: 33.33333333%;
+}
+
+.col-xs-5 {
+  width: 41.66666667%;
+}
+
+.col-xs-6 {
+  width: 50%;
+}
+
+.col-xs-7 {
+  width: 58.33333333%;
+}
+
+.col-xs-8 {
+  width: 66.66666667%;
+}
+
+.col-xs-9 {
+  width: 75%;
+}
+
+.col-xs-10 {
+  width: 83.33333333%;
+}
+
+.col-xs-11 {
+  width: 91.66666667%;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/* menú hamburguesa */
+.main-hamburger {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  height: 2px;
+  width: 24px;
+  background: #d0d0d0;
+}
+
+.main-hamburger::before, .main-hamburger::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 24px;
+  display: block;
+  background: #d0d0d0;
+}
+
+.main-hamburger::before {
+  top: -8px;
+}
+
+.main-hamburger::after {
+  top: 8px;
+}
+/* fin de menú hamburguesa */
+header, footer {
+  background-color: #383e42;
+  color: #ffffff;
+}
+
+nav {
+  padding: 14px;
+  overflow: hidden;
+}
+
+nav a, nav li {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  display: inline-block;
+}
+
+.nav-left {
+  font-size: 1.25rem;
+  float: left;
+  padding-left: 95px;
+}
+
+.nav-right {
+  float: right;
+}
+
+.view-mobile {
+  display: block;
+}
+
+.view-desktop {
+  display: none;
+}
+
+ul li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+ul {
+  padding-right: 95px;
+}
+
+.back {
+  background-color: lightgray;
+  width: 100%;
+  height: 350px;
+}
+
+h2, h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+h2 {
+  font-weight: lighter;
+  padding-top: 100px;
+}
+
+h1 {
+  font-weight: bold;
+  color: darkgray;
+  transform: translateY(-200%);
+}
+
+h3 {
+  font-size: 40px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+p {
+  line-height: 30px;
+  padding-bottom: 15px;
+}
+
+.left button {
+  color: white;
+  font-weight: bold;
+  background-color: #08f;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 20px;
+}
+
+.right span {
+  font-weight: bold;
+}
+
+.right a {
+  text-decoration: none;
+  color: #29f;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 0;
+  margin: 20px 10px;
+}
+
+.image {
+  background-color: #ddd;
+  padding: 0;
+  height: 200px;
+}
+
+.image h1 {
+  transform: translateY(150%);
+  font-size: 40px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.btn {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+h4, .card p, button {
+  padding: 0 20px;
+}
+
+h4 {
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.footer p {
+  text-align: center;
+  padding: 25px 0;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  background-color: #08f;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.btn {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.btn button {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  section {
+    overflow: auto;
+    display: flex;
+}
+
+  .view-mobile {
+    display: none;
+  }
+
+  .view-desktop {
+    display: block;
+  }
+
+  .back {
+    background-color: lightgray;
+    width: 100%;
+    height: 350px;
+  }
+
+  h2, h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  h2 {
+    font-weight: lighter;
+    padding-top: 100px;
+  }
+
+  h1 {
+    font-weight: bold;
+    color: darkgray;
+    transform: translateY(0%);
+  }
+
+  h3 {
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+
+  p {
+    line-height: 30px;
+    padding-bottom: 15px;
+    text-align: justify;
+  }
+
+  button {
+    color: white;
+    font-weight: bold;
+    background-color: #08f;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+
+  .left button {
+    font-size: 15px;
+  }
+
+  .right span {
+    font-weight: bold;
+  }
+
+  .right a {
+    text-decoration: none;
+    color: #29f;
+  }
+
+  .card {
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0 10px;
+  }
+
+  .image {
+    background-color: #ddd;
+    padding: 0;
+    height: 200px;
+  }
+
+  .image h1 {
+    transform: translateY(150%);
+    font-size: 40px;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .btn {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  h4, .card p, button {
+    padding: 0 20px;
+  }
+
+  .btn button {
+    padding: 10px;
+    margin-left: 20px;
+  }
+
+  h4 {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 25px 0;
+  }
+}
